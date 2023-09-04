@@ -15,3 +15,6 @@ def test_main_page(browser):
     page.open_downloads()  # раскрываем директроию downloads
     page.chose_word_file()  # Выбираем checkbox Word file
     time.sleep(5)  # ждем 5 секунд перед выходом браузера для наглядности, что все действия были выполнены
+
+    # команды запуска: pytest --browser_name=firefox test_main_page.py, pytest --browser_name=chrome test_main_page.py
+    # pytest test_main_page.py запустит Chrome по умолчанию
